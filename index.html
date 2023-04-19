@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <script src="random.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <header>
+    <h1>BookDucks</h1>
+   
+    <div id="authentication-box">
+        <h2>Register</h2>
+        <input type="text" id="username" placeholder="Username" />
+        <input type="text" id="email" placeholder="email" />
+        <input type="text" id="registerPassword" placeholder="Password" />
+        <button id="register">Register</button>
+        <h2 style="text-align: center">OR</h2>
+        <h2>Login</h2>
+        <input type="text" id="identifier" placeholder="Username" />
+        <input type="text" id="password" placeholder="Password" />
+        <button id="login">Login</button>
+      </div>
+
+          <div id ="profile-container">
+            <button id="logout">logout</button>
+          </div>
+        </header>
+
+   <div id="book-container"></div>
+   <div></div>
+    
+</body>
+</html>

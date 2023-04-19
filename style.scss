@@ -1,0 +1,194 @@
+// Set variables for colors and font sizes
+$primary-color: #B48EAD;
+$secondary-color: #2E3440;
+$background-color: #F8F6F7;
+$font-family: "PT Serif", serif;
+$font-size-large: 36px;
+$font-size-medium: 24px;
+$font-size-small: 16px;
+
+// Set default styles for the entire page
+html,
+body {
+  font-family: $font-family;
+  background-color: $background-color;
+}
+
+// Style the header
+header {
+  text-align: center;
+  font-size: $font-size-large;
+  padding: 30px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+// Style the registration and login form
+#authentication-box {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  
+  h2 {
+    font-size: $font-size-medium;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  input {
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #D9D9D9;
+    border-radius: 4px;
+    font-size: $font-size-small;
+    background-color: #F2F2F2;
+    color: $secondary-color;
+    font-family: "PT Sans", sans-serif;
+  }
+
+  button {
+    display: block;
+    margin-top: 30px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    background-color: $secondary-color;
+    color: #FFFFFF;
+    font-size: $font-size-small;
+    cursor: pointer;
+    font-family: "PT Sans", sans-serif;
+
+    &:hover {
+      background-color: darken($secondary-color, 10%);
+    }
+  }
+}
+
+
+
+// Define styles for book list
+.book-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  
+    li {
+      background-color: $background-color;
+      border: 1px solid $secondary-color;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      padding: 20px;
+  
+      h3 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2rem;
+        margin-top: 0;
+        margin-bottom: 10px;
+        color: $primary-color;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-align: center;
+      }
+  
+      h4 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.5rem;
+        margin-top: 0;
+        margin-bottom: 20px;
+        color: $secondary-color;
+        text-align: center;
+      }
+  
+      img {
+        max-width: 100%;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+      }
+  
+      p {
+        font-size: 1.2rem;
+        line-height: 1.5;
+        margin-bottom: 20px;
+        text-align: justify;
+      }
+  
+      button {
+        background-color: $primary-color;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        cursor: pointer;
+        margin-top: 20px;
+        padding: 10px 20px;
+        transition: all 0.2s ease-in-out;
+  
+        &:hover {
+          background-color: darken($primary-color, 10%);
+        }
+      }
+  
+      form {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+  
+        label {
+          font-family: 'Roboto', sans-serif;
+          font-size: 1.2rem;
+          margin-bottom: 5px;
+          color: $secondary-color;
+        }
+  
+        input[type="number"] {
+          border: 1px solid $secondary-color;
+          border-radius: 5px;
+          padding: 10px;
+          font-family: 'Roboto', sans-serif;
+          font-size: 1.2rem;
+          margin-bottom: 20px;
+        }
+  
+        button[type="submit"] {
+          background-color: $primary-color;
+          border: none;
+          border-radius: 5px;
+          color: #fff;
+          cursor: pointer;
+          margin-top: 20px;
+          padding: 10px 20px;
+          transition: all 0.2s ease-in-out;
+  
+          &:hover {
+            background-color: darken($primary-color, 10%);
+          }
+        }
+      }
+    }
+  }
+  
+  // Style the logout button
+  #logout {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    background-color: $secondary-color;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    cursor: pointer;
+  
+    &:hover {
+      background-color: darken($secondary-color, 10%);
+    }
+  }
+  
